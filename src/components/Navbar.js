@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-
+ import React, { Component } from "react";
+import { Link } from "react-router-dom";
 export default class Navbar extends Component {
   render() {
     return (
       <div>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/">
+            <Link className="navbar-brand" to="/">
               Surya
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -23,18 +23,45 @@ export default class Navbar extends Component {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">
+                  <Link className="nav-link active" aria-current="page" to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/">
+                  <Link className="nav-link" to="/">
                     Features
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link disabled">Disabled</a>
+                  <Link className="nav-link disabled">Disabled</Link>
                 </li>
+
+                <li className="nav-item">
+                  <Link className="nav-link active" aria-current="page" to="/Business">Business</Link>
+              </li>
+
+              <li className="nav-item">
+                  <Link className="nav-link active mx-2" aria-current="page" to="/Entertainment">Entertainment</Link>
+              </li>
+
+              <li className="nav-item">
+                  <Link className="nav-link active mx-2" aria-current="page" to="/general">General</Link>
+              </li>
+
+              <li className="nav-item">
+                  <Link className="nav-link active mx-2" aria-current="page" to="/Health">Health</Link>
+              </li>
+
+              <li className="nav-item">
+                  <Link className="nav-link active mx-2" aria-current="page" to="/Science">Science</Link>
+              </li>
+
+              <li className="nav-item">
+                  <Link className="nav-link active mx-2" aria-current="page" to="/Sports">Sports</Link>
+              </li>
+              <li className="nav-item">
+                  <Link className="nav-link active mx-2" aria-current="page" to="/Technology">Technology</Link>
+              </li>
               </ul>
             </div>
           </div>
